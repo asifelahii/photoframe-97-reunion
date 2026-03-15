@@ -400,7 +400,7 @@ function updatePreview() {
 }
 
 function drawWatermark(ctx, canvas) {
-  const text = "Made by by Asif Elahi";
+  const text = "Developed by Asif Elahi";
   ctx.save();
   const size = Math.round(canvas.width * 0.025); // ~2.5% of width
   ctx.font = `${size}px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif`;
@@ -413,7 +413,7 @@ function drawWatermark(ctx, canvas) {
   ctx.fillText(text, canvas.width - pad + 1, canvas.height - pad + 1);
 
   // main text
-  ctx.fillStyle = "rgba(255,255,255,0.92)";
+  ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
   ctx.fillText(text, canvas.width - pad, canvas.height - pad);
   ctx.restore();
 }
@@ -453,7 +453,7 @@ downloadBtn.addEventListener("click", async () => {
 
   // export
   const link = document.createElement("a");
-  link.download = "BIM_2025_DIU_CSE_EEE.jpg"; // (use .jpg to match MIME, but .JPG also works)
+  link.download = "97_reunion_mashup.jpg"; // (use .jpg to match MIME, but .JPG also works)
   link.href = off.toDataURL("image/jpeg", 0.95);
   link.click();
 });
