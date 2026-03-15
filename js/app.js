@@ -453,7 +453,7 @@ downloadBtn.addEventListener("click", async () => {
 
   // export
   const link = document.createElement("a");
-  link.download = "97_reunion_mashup.jpg"; // (use .jpg to match MIME, but .JPG also works)
+  link.download = "ssc_97_reunion.jpg"; // (use .jpg to match MIME, but .JPG also works)
   link.href = off.toDataURL("image/jpeg", 0.95);
   link.click();
 });
