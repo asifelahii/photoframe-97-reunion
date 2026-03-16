@@ -413,7 +413,7 @@ function drawWatermark(ctx, canvas) {
   ctx.fillText(text, canvas.width - pad + 1, canvas.height - pad + 1);
 
   // main text
-  ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
+  ctx.fillStyle = "rgba(143, 143, 143, 0.6)";
   ctx.fillText(text, canvas.width - pad, canvas.height - pad);
   ctx.restore();
 }
